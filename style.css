@@ -1,0 +1,96 @@
+.sideBar {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(19, 33, 172, 1) 66%, rgba(0, 212, 255, 1) 100%);
+    height: 100vh;
+}
+
+.sideText {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30vh;
+    color: white;
+}
+
+.message {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.form {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(164deg, rgba(2, 0, 36, 1) 0%, rgba(19, 33, 172, 1) 66%, rgba(0, 212, 255, 1) 100%);
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-top: 10vh;
+    border-radius: 5px;
+}
+
+.input-group,
+.form-floating,
+.form-group {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-check {
+    margin-left: 10px;
+}
+
+.gender {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.lables {
+    color: white;
+    margin-left: 10px;
+}
+
+.clickable {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 81%, rgba(19, 33, 172, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* At mobile view style */
+.mobile_view {
+    margin-top: 0px;
+    display: none;
+}
+
+@media(max-width: 860px) {
+    .mobile_view {
+        display: grid
+    }
+
+    .sideBar {
+        display: none;
+    }
+
+    .form {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    footer {
+        position: relative;
+        font-size: 10px;
+    }
+}
